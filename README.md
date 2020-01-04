@@ -35,20 +35,20 @@ Project2 : Loops where conditional label jump
 
  
 ```
- <br /> jne - jump if not equal  if( eax != directive_value )
- <br /> jl - jump if less        if( eax < directive_value )
- <br /> jg - jump if greater     if( eax > directive_value )   
- <br /> jge - jump if greater or equal  if( eax >= directive_value )
- <br /> jle - jump if less or equal   if (eax <= direcitve_value  )
- <br /> jz - jump if zero        if( eax == 0 )
+ <br/> jne - jump if not equal  if( eax != directive_value )
+ <br/> jl - jump if less        if( eax < directive_value )
+ <br/> jg - jump if greater     if( eax > directive_value )   
+ <br/> jge - jump if greater or equal  if( eax >= directive_value )
+ <br/> jle - jump if less or equal   if (eax <= direcitve_value  )
+ <br/> jz - jump if zero        if( eax == 0 )
  <br /> jnz - jump if not zero   if( eax != 0 )
 ```
 
  Please note that "cmp" command required before jump command if jump is with condition
 
 ```
- <br /> cmp eax, [ directive_value ]
- <br /> jl _mylabel
+  cmp eax, [ directive_value ]
+  jl _mylabel
 ```
 
  -> check also ascii table and you can benefit it also as I did in loop_program2.asm
