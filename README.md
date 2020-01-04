@@ -87,12 +87,12 @@ Project3 : Arrays where also label jump
    int str_length = sizeof(array1) / sizeof(char);
 
    int array2[] = { 3, 6, 9, 12, 15, 18 }
-   int numb_length = = sizeof(array2) / sizeof(int);
+   int numb_length = sizeof(array2) / sizeof(int);
        
    ```
 
   - I can assume that you can check for null-pointer in assembly like "\0" or for file "EOF" in ANSI C, but 
-   cannot tell you at the moment more info how to detect lenht of array in assembly.
+   cannot tell you at the moment more info how to detect length of array in assembly.
 
   - At the moment length value is hardcoded in code  "count"-named directive  ```count dd 20``` 
 
