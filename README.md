@@ -64,6 +64,37 @@ Project2 : Loops where conditional label jump
 
 Project3 : Arrays where also label jump 
  
+```str1 db 'hello from stanislav', 0xa``` can be compared to 
+``` char * str1 = "hello from stanislav \n"; ``` in ANCI C where 0xa means \n if check ascii value
+
+
+
+  - you need to learn esi - register and make it point to directive wich you want to handle
+
+   like this ``` mov esi, str1  ```
+
+   https://stackoverflow.com/questions/1856320/purpose-of-esi-edi-registers
+
+  - then when you want next array element just increase esi register value by 1 for DB or by 4 for DD type directive
+
+   like this ```add esi, 1```  wich means esi += 1  or ``` add esi, 4 ``` wich means esi += 4  
+
+   - Unfortenately I don't have information how to detect lenght or array in assembly wich in
+    ANCI C and C++ is like this   
+
+   ```
+   char array1[] = { 'h' , 'e' , 'l' , 'l', 'o'};	
+   int str_length = sizeof(array1) / sizeof(char);
+
+   int array2[] = { 3, 6, 9, 12, 15, 18 }
+   int numb_length = = sizeof(array2) / sizeof(int);
+       
+   ```
+
+  - I can assume that you can check for null-pointer in assembly like "\0" or for file "EOF" in ANSI C, but 
+   cannot tell you at the moment more info how to detect lenht of array in assembly.
+
+  - At the moment length value is hardcoded in code  "count"-named directive  ```count dd 20``` 
 
 
 ------------------------------------------
