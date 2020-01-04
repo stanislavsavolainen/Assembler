@@ -4,7 +4,7 @@ global      _start                              ;must be declared for linker (ld
 
 _myloop:
 
-    push eax	; save value of eax register from add command before use eax register for interup write method
+    push eax	; save value of eax register from add command before use eax register for interupt write method
 	
                                 ;message length
     ;mov     ecx,msg                             ;message to write
@@ -28,9 +28,9 @@ _myloop:
     ;int     0x80
 
 
-    pop eax	
+    pop eax ; restore saved eax register value to continue loop	
 	
-	add eax, 1
+	add eax, 1 ; eax += 1
 	
 	jmp _next   ; jump anyway cmp command not required
 
@@ -43,7 +43,7 @@ _start:                                         ;tell linker entry point
     cmp eax, [count]
     jl _myloop    ; if  eax < count then jump to _myloop label 	
 
-    ; dont continue if eax value is under counter directive constant
+    ; don't continue if eax value is under counter directive constant
 
 
 	
