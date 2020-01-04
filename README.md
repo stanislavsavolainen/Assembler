@@ -33,7 +33,10 @@ Project2 : Loops where conditional label jump
 | Jump command ( asm mnemonic)  | Second Header | programming if - statement |
 | ----------------------------- | ------------- |----------------------------|
 | jmp                           | jump without condition | 		     |  
-| jne  				| jump if not equal  | 			     |
+| jne  				| jump if not equal  | if( eax != directive_value ) |
+| jl             | jump if less |      if( eax < directive_value )  |
+| jg | jump if greater |     		if( eax > directive_value )  | 
+
 
 
 | Jump command ( asm mnemonic) | programming if - statement  |
