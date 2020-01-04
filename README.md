@@ -30,26 +30,17 @@ Project2 : Loops where conditional label jump
  asm label jump:
 
 
-| Jump command ( asm mnemonic)  | Second Header | programming if - statement |
+| Jump command ( asm mnemonic)  | description | programming if - statement |
 | ----------------------------- | ------------- |----------------------------|
 | jmp                           | jump without condition | 		     |  
 | jne  				| jump if not equal  | if( eax != directive_value ) |
 | jl             | jump if less |      if( eax < directive_value )  |
 | jg | jump if greater |     		if( eax > directive_value )  | 
+| jge | jump if greater or equal |  	if( eax >= directive_value ) |
+| jle | jump if less or equal |  	if (eax <= direcitve_value ) | 
+| jz | jump if zero |       		if( eax == 0 ) |
+ | jnz | jump if not zero |   		if( eax != 0 ) |
 
-
-
-| Jump command ( asm mnemonic) | programming if - statement  |
-| ------ | ------ |
-  
-  | jmp - jump without condition| no condition |
-  | jne - jump if not equal |  		if( eax != directive_value ) |
-  | jl - jump if less |        		if( eax < directive_value )  |
-  | jg - jump if greater |     		if( eax > directive_value )  |  
-  | jge - jump if greater or equal |  	if( eax >= directive_value ) |
-  | jle - jump if less or equal |  	if (eax <= direcitve_value ) |  
-  | jz - jump if zero |       		if( eax == 0 ) |
-  | jnz - jump if not zero |   		if( eax != 0 ) |
 
 
  Please note that "cmp" command required before jump command, if jump is with condition
@@ -79,5 +70,7 @@ Project3 : Arrays where also label jump
 
 MD-file editor and visual fix:
 https://dillinger.io/
+
+https://pandao.github.io/editor.md/en.html
 
 
