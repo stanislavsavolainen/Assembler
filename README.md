@@ -30,13 +30,13 @@ Project2 : Loops where conditional label jump
  asm label jump:
 
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Jump command ( asm mnemonic)  | Second Header | programming if - statement |
+| ----------------------------- | ------------- |----------------------------|
+| jmp                           | jump without condition | 		     |  
+| jne  				| jump if not equal  | 			     |
 
 
-| Jump command ( asm mnemonic) | programming if - statement as info |
+| Jump command ( asm mnemonic) | programming if - statement  |
 | ------ | ------ |
   
   | jmp - jump without condition| no condition |
