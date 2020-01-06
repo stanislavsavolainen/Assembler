@@ -13,6 +13,25 @@ Ubuntu 32 bit compile command  :
  $ ld -s -o string1 string1.o
  $ ./string1
 ```
+
+Window 32 bit compile command : 
+```sh
+ $ nasm -f elf string1.asm
+ $ gcc  c:/sourcedirectoryname/string1.asm -o c:/wherecompilebinarysourcename/string1bin
+ $ string1bin
+```
+
+- wich means that gcc build string1bin.exe file from nasm code. I am using old dev-c++ compiler because it already installed 
+in my enviroment from previous anci c and c++ project. You can get gcc or mingw32 compiler for windows (32 bit) for gcc command.
+As you can see for windows using "ansci c" - function call instead of system interupt for displaying text.
+
+- You can see platform difference between Linux and Windows, but there is also same things. If you learn concept how to do assembly programming 
+in general, then you can better benefit your knownledges for different device assembly programming.
+
+- conditional label jump , general arithmetic instuction  and push/pop data from register work same way in different platform
+
+   
+
 ------------------------------------------   
 
 Project1 : Hello World 
@@ -20,6 +39,9 @@ Project1 : Hello World
   - win32 , where mingw32 as linker
 
 http://asm.sourceforge.net/intro/hello.html
+
+please note that windows version probaply need carrier return ascii symbol as you can see in screenshot, if
+/r = 0xA  not return then do  /n /r  0xA, 0xD
 
 ------------------------------------------
 
