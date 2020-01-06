@@ -17,7 +17,7 @@ Ubuntu 32 bit compile command  :
 Window 32 bit compile command : 
 ```sh
  $ nasm -f elf string1.asm
- $ gcc  c:/sourcedirectoryname/string1.asm -o c:/wherecompilebinarysourcename/string1bin
+ $ gcc  c:/sourcedirectoryname/string1.o -o c:/wherecompilebinary/string1bin
  $ string1bin
 ```
 
