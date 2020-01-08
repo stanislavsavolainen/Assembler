@@ -85,7 +85,8 @@ Project2 : Loops where conditional label jump
  ------------------------------------------
 
 Project3 : Arrays where also label jump 
- 
+
+  
 ```str1 db 'hello from stanislav', 0xa``` can be compared to 
 ``` char * str1 = "hello from stanislav \n"; ``` in ANCI C where 0xa means \n if check ascii value
 
@@ -100,6 +101,8 @@ Project3 : Arrays where also label jump
   - then when you want next array element just increase esi register value by 1 for DB or by 4 for DD type directive
 
    like this ```add esi, 1```  wich means esi += 1  or ``` add esi, 4 ``` wich means esi += 4  
+
+  - win32 don't use esi- register. I did different solution for it. 
 
    - Unfortenately I don't have information how to detect lenght or array in assembly wich in
     ANCI C and C++ is like this   
@@ -118,6 +121,34 @@ Project3 : Arrays where also label jump
 
   - At the moment length value is hardcoded in code  "count"-named directive  ```count dd 20``` 
 
+
+------------------------------------------
+
+Project 4 : input ( win32 -> ansic c "scanf" , linux using stdin system interupt, read line assembly)
+
+
+```
+#include <stdio.h>
+
+int main(){
+
+ int count = 0;
+
+ printf("Enter value :");
+ scanf("%d" , &count);
+
+ for( int i = 0; i < count ; i++){
+    printf("Hello world !");
+    printf("\n");
+ }
+
+ return 0;
+}
+
+```
+I did this impelentation in assembly ( win32) . ANSI C - code example is for showing what program is doing. 
+
+check Project4/win32/input3.asm to compare it with ANCI C - code above
 
 ------------------------------------------
 
