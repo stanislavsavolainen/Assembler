@@ -80,8 +80,8 @@ Project2 : Loops where conditional label jump
 ```
 
  - check ascii table and you can benefit from it in assembly. Check ascii values and directive "mynumbers" in loop_program2.asm
-Project2/win32/loop_program2.asm
-[a link](Project2/win32/loop_program2.asm)
+Project2/ubuntu32/loop_program2.asm
+[a link](Project2/ubuntu/loop_program2.asm)
 
 
  - about "directive" , google -> assembler directive of 8086
@@ -156,6 +156,10 @@ int main(){
 }
 
 ```
+
+https://www.tutorialspoint.com/assembly_programming/assembly_system_calls.htm
+
+
 I did this impelentation in assembly ( win32 and linux) . ANSI C - code example is showing what we want to do in Assembly. 
 
 check windows Project4/win32/input3.asm to compare it with ANCI C - code above

@@ -1,0 +1,39 @@
+
+
+google.com -> show exe program stack in real time
+
+
+
+https://reverseengineering.stackexchange.com/questions/8034/what-tools-are-available-to-trace-system-resources-a-program-is-touching-in-wind
+
+-------------------------------------------------------
+
+google.com -> stack frame
+
+https://www.youtube.com/watch?v=vcfQVwtoyHY
+
+https://www.youtube.com/watch?v=PrDsGldP1Q0
+
+https://www.youtube.com/watch?v=7dLZRMDcY6c
+
+-------------------------------------------------------
+
+google.com -> nasm not support "ptr" - command in assembly
+
+-------------------------------------------------------
+
+google.com -> assembler carry flag and overflow
+
+-------------------------------------------------------
+
+https://en.wikipedia.org/wiki/Intel_80386
+
+https://en.wikipedia.org/wiki/Call_stack#CALL-FRAME
+
+https://en.wikipedia.org/wiki/Calling_convention
+
+-------------------------------------------------------
+
+https://stackoverflow.com/questions/13166064/how-do-i-print-an-integer-in-assembly-level-programming-without-printf-from-the/46301894#46301894
+
+https://stackoverflow.com/questions/18732067/how-should-i-work-with-dynamically-sized-input-in-nasm-assembly?noredirect=1&lq=1
