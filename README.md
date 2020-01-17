@@ -9,8 +9,8 @@ This repository is for learnign purpose. Maybe someone can also benefit from it.
 
 Linux online compiler in web : 
 https://www.jdoodle.com/compile-assembler-nasm-online/
-don't need Linux or install nasm to run code in physical hardware, expect some specific code
-Project1 to Project4 ubuntu32bit code sould work clear.
+don't need Linux and install nasm to run code in physical hardware, expect some exception or specific code.
+Project1 to Project4 ubuntu32bit code sould work clear on web nasm-emulator.
 
 
 Ubuntu 32 bit compile command  : 
@@ -34,7 +34,7 @@ As you can see for windows using "ansci c" - function call instead of system int
 - You can see platform difference between Linux and Windows, but there is also same things. If you learn concept how to do assembly programming 
 in general, then you can better benefit your knownledges for different device assembly programming.
 
-- conditional label jump , general arithmetic instuction  and push/pop data from register work same way in different platform
+- conditional label jump , general arithmetic instruction and push/pop data from register work same way in different platform
 
    
 
@@ -47,7 +47,7 @@ Project1 : Hello World
 http://asm.sourceforge.net/intro/hello.html
 
 please note that windows version probaply need carrier return ascii symbol as you can see in screenshot, if
-/r = 0xA  not return then do  /n /r  0xA, 0xD
+/r = 0xD  not return then do  /n /r  0xA, 0xD
 
 ------------------------------------------
 
@@ -60,7 +60,8 @@ Project2 : Loops where conditional label jump
 
 | Jump command ( asm mnemonic)  | description | programming if - statement |
 | ----------------------------- | ------------- |----------------------------|
-| jmp                           | jump without condition | 		     |  
+| jmp                           | jump without condition | 		     | 
+| je  				| jump if  equal  | if( eax == directive_value ) | 
 | jne  				| jump if not equal  | if( eax != directive_value ) |
 | jl             | jump if less |      if( eax < directive_value )  |
 | jg | jump if greater |     		if( eax > directive_value )  | 
@@ -79,6 +80,9 @@ Project2 : Loops where conditional label jump
 ```
 
  - check ascii table and you can benefit from it in assembly. Check ascii values and directive "mynumbers" in loop_program2.asm
+Project2/win32/loop_program2.asm
+[a link](Project2/win32/loop_program2.asm)
+
 
  - about "directive" , google -> assembler directive of 8086
  
@@ -152,12 +156,14 @@ int main(){
 }
 
 ```
-I did this impelentation in assembly ( win32) . ANSI C - code example is for showing what program is doing. 
+I did this impelentation in assembly ( win32 and linux) . ANSI C - code example is showing what we want to do in Assembly. 
 
-check Project4/win32/input3.asm to compare it with ANCI C - code above
+check windows Project4/win32/input3.asm to compare it with ANCI C - code above
+[a link](Project4/win32/input3.asm)
 
 Linux version of input command can be found at:
 Project4/ubuntu32/input3.asm
+[a link](Project4/ubuntu32bit/input3.asm)
 
 ------------------------------------------
 
@@ -165,5 +171,8 @@ MD-file editor and visual fix:
 https://dillinger.io/
 
 https://pandao.github.io/editor.md/en.html
+
+README.md relative link:
+https://github.blog/2013-01-31-relative-links-in-markup-files/
 
 
