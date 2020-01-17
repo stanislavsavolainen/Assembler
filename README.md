@@ -7,6 +7,12 @@ I am using NASM ( Netwide Assembler ) compiler for assembly programming on Linux
 This repository is for learnign purpose. Maybe someone can also benefit from it.
 
 
+Linux online compiler in web : 
+https://www.jdoodle.com/compile-assembler-nasm-online/
+don't need Linux or install nasm to run code in physical hardware, expect some specific code
+Project1 to Project4 ubuntu32bit code sould work clear.
+
+
 Ubuntu 32 bit compile command  : 
 ```sh
  $ nasm -f elf string1.asm
@@ -149,6 +155,9 @@ int main(){
 I did this impelentation in assembly ( win32) . ANSI C - code example is for showing what program is doing. 
 
 check Project4/win32/input3.asm to compare it with ANCI C - code above
+
+Linux version of input command can be found at:
+Project4/ubuntu32/input3.asm
 
 ------------------------------------------
 
