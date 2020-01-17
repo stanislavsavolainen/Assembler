@@ -197,7 +197,7 @@ int main(){
 		break;
 	
 		case 2:
-			printf("Your option is Tee \n");
+			printf("Your option is Tea \n");
 		break;
 	
 		case 3:
