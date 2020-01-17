@@ -81,7 +81,7 @@ Project2 : Loops where conditional label jump
 
  - check ascii table and you can benefit from it in assembly. Check ascii values and directive "mynumbers" in loop_program2.asm
 Project2/ubuntu32/loop_program2.asm
-[a link](Project2/ubuntu/loop_program2.asm)
+[a link](Project2/ubuntu32bit/loop_program2.asm)
 
 
  - about "directive" , google -> assembler directive of 8086
