@@ -171,6 +171,57 @@ Project4/ubuntu32/input3.asm
 
 ------------------------------------------
 
+Project 5 : nasm options , like ANCI C switch-case structure
+
+See example code on ANCI C :
+
+
+```
+#include <stdio.h>
+
+int main(){
+
+	printf("Drink menu list \n");
+	printf("Enter 1 for Coffee \n");
+	printf("Enter 2 for Tea \n");
+	printf("Enter 3 for Milk \n");
+	
+
+	int i = 0;
+	printf("Enter your option : ");
+	scanf("%d" , &i);
+	
+	switch(i) {
+		case 1: 
+			printf("Your option is Coffee \n");
+		break;
+	
+		case 2:
+			printf("Your option is Tee \n");
+		break;
+	
+		case 3:
+			printf("Your option is Milk \n");
+		break;
+		
+		default:
+		      printf("That kind of drink is not in list \n");	
+		break;
+	}	
+
+return 0;
+}
+
+
+```
+Compare it to Linux nasm code :
+
+Project5/ubuntu32bit/option_program1.asm
+[a link](Project5/ubuntu32bit/option_program1.asm)
+
+
+------------------------------------------
+
 MD-file editor and visual fix:
 https://dillinger.io/
 
