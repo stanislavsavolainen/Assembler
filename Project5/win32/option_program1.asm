@@ -10,7 +10,7 @@ section .text
 ;----- option coffee-----------
 _label_coffee:
 
-	push option_is
+    push option_is
     call _printf
     add esp, 4
 
@@ -27,7 +27,7 @@ jmp label_exit_program
 ;----- option tea-------------
 _label_tea:
 
-	push option_is
+    push option_is
     call _printf
     add esp, 4
 
@@ -44,7 +44,7 @@ jmp label_exit_program
 ;----- option milk------------
 _label_milk:
 
-	push option_is
+    push option_is
     call _printf
     add esp, 4
 
@@ -62,7 +62,7 @@ jmp label_exit_program
 ;----- option not in list -----
 _label_not_listed:
 
-	push option_not_exist
+    push option_not_exist
     call _printf
     add esp, 4
 
@@ -75,6 +75,7 @@ jmp label_exit_program
 
 _main:
 
+        ; save current register state, before run program ( no effect on program, just stability)
 	push ebp
 	mov ebp, esp
 
@@ -201,6 +202,7 @@ _main:
 
    label_exit_program:
 
+   ; restore register state as in beging, before exit program
    mov esp,ebp
    pop ebp
 
@@ -213,7 +215,7 @@ section .data
 	option_title db "Drink menu list", 0
 	msg db  "Enter your option :",0
 	;linebreak     db  '',0xa
-    menuenter	db "Enter " , 0
+    	menuenter	db "Enter " , 0
 	menufor	db " for " , 0
 	option_coffee db "Coffee", 0
 	option_tea db "Tea", 0

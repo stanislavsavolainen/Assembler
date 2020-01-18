@@ -221,7 +221,7 @@ Project5/ubuntu32bit/option_program1.asm
 
 Also compare it to Windows nasm code :
 Project5/win32/option_program1.asm
-[a link](Project5/ubuntu32bit/option_program1.asm)
+[a link](Project5/win32/option_program1.asm)
 
 
 ------------------------------------------
