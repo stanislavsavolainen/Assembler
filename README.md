@@ -226,7 +226,49 @@ Project5/win32/option_program1.asm
 
 ------------------------------------------
 
-Project 6 : Nasm function call  
+Project 6 : Nasm function call 
+
+```
+#include <stdio.h>
+
+void func1() {
+   printf("this is text inside function \n");
+}
+
+void func2(int param1, int param2,  int param3 ) {
+   printf("%d \n" , param1);
+   printf("%d \n" , param2);
+   printf("%d \n" , param3);
+}
+
+int main(){
+
+ char * after = "this is text after function\n"; 
+
+ func1();
+
+ printf("%s" , after);
+
+ func1(); 
+
+ func2( 3 , 2 , 1 );
+
+ printf("\n");
+
+ printf("%s" , after);
+
+ 
+return 0;
+}
+
+
+``` 
+
+Compare it to Linux nasm code :
+
+Project6/ubuntu32bit/function1.asm
+[a link](Project6/ubuntu32bit/function1.asm)
+
 
 ------------------------------------------
 
