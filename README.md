@@ -36,7 +36,20 @@ in general, then you can better benefit your knownledges for different device as
 
 - conditional label jump , general arithmetic instruction and push/pop data from register work same way in different platform
 
-   
+
+MASM = Macroassembler ( Windows only)
+
+I ported projects 4 , 5 and 6 for masm32 - compatible ( works on win7 and masm32 6.14.8444)
+
+Masm32 compile command :
+```sh
+ $ ml.exe /c /coff function1.asm
+ $ link.exe /SUBSYSTEM:CONSOLE function1.obj
+ $ function1.exe
+```
+  
+Where ml.exe make obj - file from source code and link make exe - file from obj - file
+Your should put masm source code to masm32/bin folder. 
 
 ------------------------------------------   
 
@@ -47,7 +60,7 @@ Project1 : Hello World
 http://asm.sourceforge.net/intro/hello.html
 
 please note that windows version probaply need carrier return ascii symbol as you can see in screenshot, if
-/r = 0xD  not return then do  /n /r  0xA, 0xD
+/n = 0xA  not return then do  /n /r  0xA, 0xD
 
 ------------------------------------------
 
@@ -268,6 +281,8 @@ Compare it to Linux nasm code :
 
 Project6/ubuntu32bit/function1.asm
 [a link](Project6/ubuntu32bit/function1.asm)
+
+
 
 
 ------------------------------------------

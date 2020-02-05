@@ -1,0 +1,34 @@
+nasm -f elf hello_msvcrt1.asm
+ld -s -o hello_msvcrt1bin hello_msvcrt1.o
+
+ld /subsystem:console /nodefaultlib /entry:main $(TARGET).obj kernel32.lib
+
+
+
+ml.exe /c /coff c:/programming2020/assembler/myasm2020proj2/hello1.asm /Fo c:/programming2020/assembler/myasm2020proj2/hello1.obj
+link.exe /SUBSYSTEM:CONSOLE c:/programming2020/assembler/myasm2020proj2/programName.obj
+
+
+
+ml.exe /c /coff c:/programming2020/assembler/myasm2020proj2/hello1.asm > c:/programming2020/assembler/myasm2020proj2/hello1.obj
+
+link.exe /SUBSYSTEM:CONSOLE c:/programming2020/assembler/myasm2020proj2/hello1.obj > c:/programming2020/assembler/myasm2020proj2/hello1.exe
+
+
+
+ml.exe /c /coff c:/programming2020/assembler/myasm2020proj2/hello1.asm 
+
+move hello1.obj c:/programming2020/assembler/myasm2020proj2/
+
+link.exe /SUBSYSTEM:CONSOLE c:/programming2020/assembler/myasm2020proj2/hello1.obj
+
+move hello1.exe c:/programming2020/assembler/myasm2020proj2/
+
+ml.exe c:/programming2020/assembler/myasm2020proj2/inputnotmy1.asm /link /subsystem:console /defaultlib:kernel32.lib /entry:main
+
+
+
+
+
+
+masm 
