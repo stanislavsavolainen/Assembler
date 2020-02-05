@@ -1,0 +1,24 @@
+
+
+https://en.wikipedia.org/wiki/X86_memory_segmentation
+
+https://en.wikipedia.org/wiki/Position-independent_code
+
+https://en.wikipedia.org/wiki/Protected_mode
+
+
+
+Videomode 13h
+https://stackoverflow.com/questions/56092334/how-to-draw-a-letter-in-assemblyvga-mode-masm-386?rq=1
+
+
+
+https://stackoverflow.com/questions/6866746/hardware-vga-text-mode-io-in-old-dos-assembly-issue?rq=1
+
+
+
+Assembler subroutine
+
+
+
+https://en.wikipedia.org/wiki/Lazy_evaluation

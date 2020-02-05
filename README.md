@@ -182,6 +182,11 @@ Linux version of input command can be found at:
 Project4/ubuntu32/input3.asm
 [a link](Project4/ubuntu32bit/input3.asm)
 
+Windows masm32 code :
+Project4/masm32/input3.asm
+[a link](Project4/masm32/input3.asm)
+
+
 ------------------------------------------
 
 Project 5 : nasm options , like ANCI C switch-case structure
@@ -236,6 +241,10 @@ Also compare it to Windows nasm code :
 Project5/win32/option_program1.asm
 [a link](Project5/win32/option_program1.asm)
 
+Windows masm32 code :
+Project5/masm32/option_program1.asm
+[a link](Project5/masm32/option_program1.asm)
+
 
 ------------------------------------------
 
@@ -282,7 +291,18 @@ Compare it to Linux nasm code :
 Project6/ubuntu32bit/function1.asm
 [a link](Project6/ubuntu32bit/function1.asm)
 
+Also Windows nasm code :
 
+Project6/win32/function1.asm
+[a link](Project6/win32/function1.asm)
+
+Windows Masm32 code :
+Project6/masm32/function1.asm
+[a link](Project6/masm32/function1.asm)
+
+
+ESP (stack pointer) - register : 
+http://www.c-jump.com/CIS77/ASM/Stack/S77_0040_esp_register.htm
 
 
 ------------------------------------------
