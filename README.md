@@ -37,7 +37,7 @@ in general, then you can better benefit your knownledges for different device as
 - conditional label jump , general arithmetic instruction and push/pop data from register work same way in different platform
 
 
-MASM = Macroassembler ( Windows only)
+MASM = Macro Assembler ( Windows only)
 
 I ported projects 4 , 5 and 6 for masm32 - compatible ( works on win7 and masm32 6.14.8444)
 
@@ -48,7 +48,7 @@ Masm32 compile command :
  $ function1.exe
 ```
   
-Where ml.exe make obj - file from source code and link make exe - file from obj - file
+Where ml.exe make obj - file from source code and link make exe - file from obj - file.
 Your should put masm source code to masm32/bin folder. 
 
 ------------------------------------------   
@@ -223,7 +223,7 @@ int main(){
 		break;
 		
 		default:
-		      printf("That kind of drink is not in list \n");	
+		      printf("This drink is not listed \n");	
 		break;
 	}	
 
@@ -254,7 +254,7 @@ Project 6 : Nasm function call
 #include <stdio.h>
 
 void func1() {
-   printf("this is text inside function \n");
+   printf("this text inside function \n");
 }
 
 void func2(int param1, int param2,  int param3 ) {

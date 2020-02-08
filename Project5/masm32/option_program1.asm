@@ -10,35 +10,21 @@ includelib \masm32\lib\masm32.lib
 
 
 .data
-       dataMessage db "Hello world ! ", 0   ; define 12 bytes, fill it with 'Hello world.', 0 -> terminator
-	   linebreak db " ", 13, 10, 0
-       userinput dd ?
-       userinput2 db 100 dup(?) ; reserve 100 byte for input storage
-	   justline db "-----------------------------------", 13, 10, 0	   
-       
-	   message db "Enter vaulue : " , 0
-	
-    ; ------------- copy from Project4/win32/option1.asm ( I did it previosly )	
-	option_title db "Drink menu list", 0
-	 msg db  "Enter your option :",0
-	;linebreak     db  '',0xa
-    menuenter	db "Enter " , 0
-	menufor	db " for " , 0
-	option_coffee db "Coffee", 0
-	option_tea db "Tea", 0
-	option_milk db "Milk", 0
-	option_is db "Your option is " , 0
-	option_not_exist db "That kind of drink is not in list",0
-	input_variable dd 0
-	num dd " " , 0
-	formatin db "%s", 0
-	;integer1: times 4 db 0
-	integer1 db "123456" , 0
-	formatout db "%s", 0 ; newline, nul terminator
-	msg1 db "Enter value :",0
-	
-	   
-       
+    linebreak db " ", 13, 10, 0
+    userinput dd ?
+; ------------- copy from Project4/win32/option1.asm ( I did it previosly )	
+    option_title db "Drink menu list", 0
+    msg db  "Enter your option :",0
+    menuenter db "Enter " , 0
+    menufor db " for " , 0
+    option_coffee db "Coffee", 0
+    option_tea db "Tea", 0
+    option_milk db "Milk", 0
+    option_is db "Your option is " , 0
+    option_not_exist db "That kind of drink is not in list",0
+    input_variable dd 0
+    num dd " " , 0
+    formatin db "%s", 0   
 
 .code
 
@@ -195,6 +181,6 @@ start:
    ; --------- exit ---------
    	   
 exit:
-       push 0                                            ; exit code for the process and all threads
+       push 0                                        ; exit code for the process and all threads
        call ExitProcess                              ; invoke ExitProcess API
 end start

@@ -123,26 +123,26 @@ _start:                                         ;tell linker entry point
     mov     eax,1                               ;system call number (sys_exit)
     int     0x80                                ;call kernel
 
-section     .data
+section  .data
 
 
-msg4    db  'this is text inside function', 0xa
-len4    equ $ - msg4
+    msg4    db  'text inside function', 0xa
+    len4    equ $ - msg4
 
-msg5    db  'this is text after function' , 0xa
-len5    equ $ - msg5
+    msg5    db  'text after function' , 0xa
+    len5    equ $ - msg5
 
-linebreak db '',0xa
-len_linebreak equ $ - linebreak 
+    linebreak db '',0xa
+    len_linebreak equ $ - linebreak 
 
-param1 db '-' , 0
-len_param1 equ $ - param1
+    param1 db '-' , 0
+    len_param1 equ $ - param1
 
-param2 db '-' , 0
-len_param2 equ $ - param2
+    param2 db '-' , 0
+    len_param2 equ $ - param2
 
-param3 db '-' , 0
-len_param3 equ $ - param3
+    param3 db '-' , 0
+    len_param3 equ $ - param3
 
                           
 

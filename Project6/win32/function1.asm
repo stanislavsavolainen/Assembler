@@ -13,7 +13,7 @@ _func:
     call _printf
     add esp, 4  
 	 
-ret
+ret ; return next line after this function called
 
 
 _func2:
@@ -59,12 +59,10 @@ _func2:
     add esp, 4  
     
 
-ret
+ret ; return next line after this function called
 
 
-
-
-_main:                                         ;tell linker entry point
+_main:                  ;tell linker entry point
 
 
     call _func
@@ -96,15 +94,15 @@ _main:                                         ;tell linker entry point
     call _printf
     add esp, 4
 
-ret
+ret 
 
-section     .data
+section .data
 
-	param1 dd "-" , 0
-	param2 dd "-" , 0
-	param3 dd "-" , 0
-        msg4    db  "this is text inside function", 0
-	msg5    db  "this is text after function" , 0
-	linebreak db "",0xa, 0xd
+    param1 dd "-" , 0
+    param2 dd "-" , 0
+    param3 dd "-" , 0
+    msg4    db  "text inside function", 0
+    msg5    db  "text after function" , 0
+    linebreak db "",0xa, 0xd
 
                           

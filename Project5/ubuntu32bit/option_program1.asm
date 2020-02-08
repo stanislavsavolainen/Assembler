@@ -249,11 +249,11 @@ section     .data
 title db 'Drink menu list' , 0xa
 len_title equ $ - title
 
-msg     db  'Enter your option :',0                 ;our dear string
-len     equ $ - msg                             ;length of our dear string
+msg  db  'Enter your option :',0               ;our dear string
+len  equ $ - msg                               ;length of our dear string
 
-linebreak     db  '',0xa                 ;our dear string
-len2     equ $ - linebreak                             ;length of our dear string
+linebreak db  '',0xa                           ;our dear string
+len2 equ $ - linebreak                         ;length of our dear string
 
 menuenter	db 'Enter ' , 0
 lenmenuenter equ $ - menuenter
@@ -273,7 +273,7 @@ len_milk equ $ - option_milk
 option_is db 'Your option is ' , 0
 len_option_is equ $ - option_is
 
-option_not_exist db 'That kind of drink is not in list',0
+option_not_exist db 'This drink is not listed',0
 len_option_not_exist equ $ - option_not_exist
 
 input_variable dd 0

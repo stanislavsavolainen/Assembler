@@ -9,78 +9,52 @@ include \masm32\include\masm32.inc
 includelib \masm32\lib\masm32.lib
 
 .data
-       dataMessage db "Hello world ! ", 0   ; define 12 bytes, fill it with 'Hello world.', 0 -> terminator
-	   linebreak db " ", 13, 10, 0
-       userinput dd ?
-       userinput2 db 100 dup(?) ; reserve 100 byte for input storage
-	   justline db "-----------------------------------", 13, 10, 0	   
+    dataMessage db "Hello world ! ", 0   ; define 12 bytes, fill it with 'Hello world.', 0 -> terminator
+    linebreak db " ", 13, 10, 0
+    userinput dd ?
+    message db "Enter value : " , 0
        
-	   message db "Enter vaulue : " , 0
-       
-
 .code
 
 myloop:
 
-	push eax
+    push eax ; save eax - register value for add-operation
 	
-	push offset dataMessage
+    push offset dataMessage
     call StdOut
 	
-	push offset linebreak
-	call StdOut
+    push offset linebreak
+    call StdOut
 
-	pop eax
+    pop eax ; restore eax - register for add-operaion
 
-add eax , 1
+    add eax , 1
 
 jmp next_element
 
 
 start:
-       ;push offset dataMessage               ; put in to stack the effective add of dataMessage
-       ;call StdOut                                      ; invoke StdOut API
-
-       push offset message
-	   call StdOut
-	   
-       ;push 100
-	   ;push offset userinput2
-	   ;call StdIn	 
-	   
-	   push 1
-	   push offset userinput
-	   call StdIn	 	
+      
+    push offset message
+    call StdOut
+	      
+    push 1 ; read only 1 byte from StdIn, this means values 0 to 9
+    push offset userinput
+    call StdIn	 	
 	  
-	   ; do same operation that I did in Project4/ubuntu32bit/input3.asm
-	   ; because numbers input is in ascii format substract 48 value to means for example if number 2 is 50 in ascii sub 48 to make it 2 is 2 value
-		mov eax , [userinput]
-		sub eax , 48
-		mov [userinput], eax 
+    ; do same operation that I did in Project4/ubuntu32bit/input3.asm
+    ; because numbers input is in ascii format substract 48 value to means for example if number 2 is 50 in ascii sub 48 to make it 2 is 2 value
+    mov eax , [userinput]
+    sub eax , 48
+    mov [userinput], eax 
 	  
-	  
-	   mov eax , 0
+    mov eax , 0
 	 
-       next_element:	   
-	   
-	   cmp eax, [userinput]
-	   jl myloop
-	   
-	   
-	   ;push userinput
-	   ;call StdIn
-	   ;mov userinput , eax 
-	   
-     
-	   
-	   ;push offset justline
-	   ;call StdOut
-	   
-	   ;push offset userinput2
-	   ;call StdOut
-	   
+    next_element:	   
+    cmp eax, [userinput]   ; if eax < userinput, then jump / continue loop next element
+    jl myloop	   
     	   
 exit:
-       push 0                                            ; exit code for the process and all threads
-       call ExitProcess                              ; invoke ExitProcess API
+    push 0                                        ; exit code for the process and all threads
+    call ExitProcess                              ; invoke ExitProcess API
 end start
