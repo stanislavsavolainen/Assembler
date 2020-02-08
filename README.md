@@ -127,24 +127,6 @@ Project3 : Arrays where also label jump
 
   - win32 don't use esi- register. I did different solution for it. 
 
-   - Unfortenately I don't have information how to detect lenght or array in assembly wich in
-    ANCI C and C++ is like this   
-
-   ```
-   char array1[] = { 'h' , 'e' , 'l' , 'l', 'o'};	
-   int str_length = sizeof(array1) / sizeof(char);
-
-   int array2[] = { 3, 6, 9, 12, 15, 18 }
-   int numb_length = sizeof(array2) / sizeof(int);
-       
-   ```
-
-  - I can assume that you can check for null-pointer in assembly like "\0" or for file "EOF" in ANSI C, but 
-   cannot tell you at the moment more info how to detect length of array in assembly.
-
-  - At the moment length value is hardcoded in code  "count"-named directive  ```count dd 20``` 
-
-
 ------------------------------------------
 
 Project 4 : input ( win32 -> ansic c "scanf" , linux using stdin system interupt, read line assembly)
@@ -254,7 +236,7 @@ Project 6 : Nasm function call
 #include <stdio.h>
 
 void func1() {
-   printf("this text inside function \n");
+   printf("text inside function \n");
 }
 
 void func2(int param1, int param2,  int param3 ) {
@@ -265,7 +247,7 @@ void func2(int param1, int param2,  int param3 ) {
 
 int main(){
 
- char * after = "this is text after function\n"; 
+ char * after = "text after function\n"; 
 
  func1();
 
